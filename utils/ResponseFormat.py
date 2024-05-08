@@ -12,8 +12,8 @@ corrent_format = corrent_parser.get_format_instructions()
 
 class OPTIMResult(BaseModel):
     OPTIMSummary: str = Field(description="已优化后的文章内容")
-    OPTIMAnalysis: List[str] = Field(description="已优化后的文章内容的优化解释内容")
-    OPTIMAdvice: List[str] = Field(description="已优化后的文章内容的总结内容")
+    OPTIMAnalysis: List[str] = Field(description="对文章内容的优化分析")
+    OPTIMAdvice: List[str] = Field(description="对文章内容的改进建议")
 
 optim_parser = JsonOutputParser(pydantic_object=OPTIMResult)
 optim_format = optim_parser.get_format_instructions()
