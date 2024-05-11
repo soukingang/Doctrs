@@ -3,7 +3,7 @@ from langchain_openai.chat_models import ChatOpenAI
 from langchain_community.chat_models.tongyi import ChatTongyi
 from langchain_community.chat_models.ollama import ChatOllama
 
-def SelectLLM(model: str):
+def SelectLLM(model: LLM_MODEL):
     if model == LLM_MODEL.ChatTongyi:
         return ChatTongyi(model="qwen-turbo")
     elif model == LLM_MODEL.ChatOllama:

@@ -5,6 +5,11 @@ class LLM_MODEL(Enum):
     ChatOllama = "ChatOllama"
     ChatOpenAI = "ChatOpenAI"
 
+class EMBEDDING_MODEL(Enum):
+    OpenAI = "OpenAI"
+    Ollama = "Ollama"
+    DashScope = "DashScope"
+
 class VectorDB(Enum):
     Chroma = "Chroma"
     Milvus = "Milvus"
